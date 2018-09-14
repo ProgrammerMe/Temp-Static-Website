@@ -1,4 +1,7 @@
 language: ruby
 rvm:
- - 2.2
- - jruby
+- 2.2
+- jruby
+before_install:
+- openssl aes-256-cbc -K $encrypted_08b530716fe8_key -iv $encrypted_08b530716fe8_iv
+  -in deploy-key.enc -out deploy-key -d
